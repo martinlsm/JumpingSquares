@@ -8,8 +8,8 @@ public class CollisionBlock {
     public CollisionBlock(int x, int y, int width, int height) {
         x0 = x;
         y0 = y;
-        x1 = x + width;
-        y1 = y + height;
+        x1 = x + width - 1;
+        y1 = y + height - 1;
     }
 
     public boolean isInside(int x, int y) {
@@ -24,6 +24,6 @@ public class CollisionBlock {
      * @return A vector pointing in the direction of the other block. The zero vector if no collision is occuring.
      */
     public Vector2 collisionDir(CollisionBlock other) {
-        return new Vector2(0, 0);
+        return new Vector2(0.0f, 0.0f);
     }
 }
