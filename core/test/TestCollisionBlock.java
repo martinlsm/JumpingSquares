@@ -17,7 +17,7 @@ public class TestCollisionBlock {
     @Test
     public void noCollision() {
         CollisionBlock b1 = new CollisionBlock(200, 200, 50, 50);
-        CollisionBlock b2 = new CollisionBlock(250, 200, 50, 50);
+        CollisionBlock b2 = new CollisionBlock(251, 200, 50, 50);
         assertEquals(new Vector2(0.0f, 0.0f), b1.collisionDir(b2));
         assertEquals(new Vector2(0.0f, 0.0f), b2.collisionDir(b1));
     }
