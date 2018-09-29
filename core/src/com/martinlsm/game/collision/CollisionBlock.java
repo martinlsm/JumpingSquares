@@ -10,6 +10,10 @@ public class CollisionBlock {
         size = new Vector2(width, height);
     }
 
+    public void move(Vector2 deltaPos) {
+
+    }
+
     /**
      * Checks if another block is colliding with this block and returns the direction from where the collision
      * is occuring (Four possible directions (1, 0), (0, 1), (-1, 0), (0, -1)).
